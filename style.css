@@ -39,6 +39,7 @@ margin-left: 35px;
 transition: .3s;
 opacity: 0;
 animation: slideTop .5s ease forwards;
+animation-delay: calc(.2s * var(--i));
 }
 .navbar a:hover{
     color: #0ef;
@@ -48,7 +49,7 @@ animation: slideTop .5s ease forwards;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(AWWAL.jpg)no-repeat;
+    background: url(background.jpg)no-repeat;
     background-position: cover;
     background-size: center;
     display: flex;
@@ -69,7 +70,9 @@ animation: slideTop .5s ease forwards;
     color: #0ef;
 }
 .home-content h3:nth-child(2){
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
 }
 .home-content h1{
     font-size: 56px;
@@ -122,12 +125,34 @@ animation: slideTop .5s ease forwards;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
 }
 .btn-box:hover{
   box-shadow: 0 0 5px cyan,
   0 0 25px cyan,0 0 50px cyan,
   0 0 100px ,0 0 200px cyan;  
 }
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #081b29;
+
+}
+
+
+
+
+
+
+
+
+
+
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
